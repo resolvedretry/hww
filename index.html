@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAC App - Pembentuk Kalimat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AAC App Saya</h1>
+    </header>
+
+    <!-- Sentence Display -->
+    <div id="sentence-area" aria-live="polite">Kalimat akan muncul di sini...</div>
+
+    <!-- Grid of Words -->
+    <main class="grid-container">
+        <button class="grid-item" aria-label="Saya lapar" onclick="addToSentence('Saya lapar')">🍛 Saya lapar</button>
+        <button class="grid-item" aria-label="Saya ingin makan" onclick="addToSentence('Saya ingin makan')">🍽️ Saya ingin makan</button>
+        <button class="grid-item" aria-label="Saya ingin minum" onclick="addToSentence('Saya ingin minum')">🥤 Saya ingin minum</button>
+        <button class="grid-item" aria-label="Saya senang" onclick="addToSentence('Saya senang')">😊 Saya senang</button>
+        <button class="grid-item" aria-label="Saya sedih" onclick="addToSentence('Saya sedih')">😢 Saya sedih</button>
+        <button class="grid-item" aria-label="Saya marah" onclick="addToSentence('Saya marah')">😡 Saya marah</button>
+        <button class="grid-item" aria-label="Saya ingin bermain" onclick="addToSentence('Saya ingin bermain')">⚽ Saya ingin bermain</button>
+        <button class="grid-item" aria-label="Saya ingin tidur" onclick="addToSentence('Saya ingin tidur')">🛏️ Saya ingin tidur</button>
+        <button class="grid-item" aria-label="Saya ingin ke toilet" onclick="addToSentence('Saya ingin ke toilet')">🚽 Saya ingin ke toilet</button>
+    </main>
+
+    <!-- Control Buttons -->
+    <div class="controls">
+        <button id="speak-btn" onclick="speakSentence()">🔊 Ucapkan</button>
+        <button id="clear-btn" onclick="clearSentence()">❌ Hapus</button>
+    </div>
+
+    <footer>
+        <p>Dibuat dengan ❤️ untuk Aksesibilitas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
