@@ -13,6 +13,11 @@
 
     <!-- Sentence Display -->
     <div id="sentence-area" aria-live="polite">Kalimat akan muncul di sini...</div>
+    <!-- Control Buttons -->
+    <div class="controls">
+        <button id="speak-btn" onclick="speakSentence()">🔊 Ucapkan</button>
+        <button id="clear-btn" onclick="clearSentence()">❌ Hapus</button>
+    </div>
 
     <!-- Grid of Words -->
     <main class="grid-container">
@@ -27,11 +32,7 @@
         <button class="grid-item" aria-label="Saya ingin ke toilet" onclick="addToSentence('Saya ingin ke toilet')">🚽 Saya ingin ke toilet</button>
     </main>
 
-    <!-- Control Buttons -->
-    <div class="controls">
-        <button id="speak-btn" onclick="speakSentence()">🔊 Ucapkan</button>
-        <button id="clear-btn" onclick="clearSentence()">❌ Hapus</button>
-    </div>
+    
 
     <footer>
         <p>Dibuat dengan ❤️ untuk Aksesibilitas</p>
