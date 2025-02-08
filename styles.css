@@ -5,6 +5,10 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
+    background-image: url('bg.jpg'); /* Change this to your image */
+    background-size: cover; /* Makes it fit the screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
 }
 
 header h1 {
