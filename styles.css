@@ -48,7 +48,7 @@ header h1 {
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
-    width: 150px;
+    width: 100px;
     height: 100px; /* Add this to set button height */
     display: flex;
     align-items: center;
